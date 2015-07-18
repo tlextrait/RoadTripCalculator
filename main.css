@@ -40,12 +40,12 @@ h1 {
 .panel-oil .panel-title,
 .panel-brakes .panel-title,
 .panel-trip .panel-title {
-	color: #FFF;
+	/*color: #FFF;*/
 	font-size: 24px;
 }
 
 label {
-	color: #FFF;
+	/*color: #FFF;*/
 }
 
 .panel-body {
@@ -69,25 +69,25 @@ label {
 */
 
 .panel-car {
-	background: #69A1FF;
+	border: 2px solid #69A1FF;
 }
 
 .panel-gas {
-	background: #FFB549;
+	border: 2px solid #FFB549;
 }
 
 .panel-tires {
-	background: #B87AE8;
+	border: 2px solid #B87AE8;
 }
 
 .panel-oil {
-	background: #89E84D;
+	border: 2px solid #89E84D;
 }
 
 .panel-brakes {
-	background: #F5556C;
+	border: 2px solid #F5556C;
 }
 
 .panel-trip {
-	background: #78A3FF;
+	border: 2px solid #78A3FF;
 }
