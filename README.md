@@ -9,7 +9,7 @@ This is a simple tool that allows you to calculate the true cost of a road trip.
 * Tolls
 * Parking
 
-This little tool also fetches the national average price prices.
+This little tool also fetches the national average fuel prices.
 
 # Demo
 See it live here: [tlextrait.com/projects/roadtrip](http://tlextrait.com/projects/roadtrip)
