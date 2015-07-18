@@ -1,5 +1,5 @@
 /**
-* Road Trip Calculator
+* Road Trip Calculator roadtrip.js
 * © Copyright 2015 Thomas Lextrait, All Rights Reserved
 */
 

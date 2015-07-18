@@ -1,0 +1,93 @@
+/**
+* Road Trip Calculator main.css
+* © Copyright 2015 Thomas Lextrait, All Rights Reserved
+*/
+
+body {
+	background: #F1F1F1;
+}
+
+h1 {
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.panel {
+	border-radius:0;
+}
+
+.panel-heading {
+	border-radius:0;
+}
+
+.panel-car .panel-heading,
+.panel-gas .panel-heading,
+.panel-tires .panel-heading,
+.panel-oil .panel-heading,
+.panel-brakes .panel-heading,
+.panel-trip .panel-heading {
+	padding-bottom:0;
+}
+
+.panel-title {
+	font-size: 24px;
+}
+
+.panel-car .panel-title,
+.panel-gas .panel-title,
+.panel-tires .panel-title,
+.panel-oil .panel-title,
+.panel-brakes .panel-title,
+.panel-trip .panel-title {
+	color: #FFF;
+	font-size: 24px;
+}
+
+label {
+	color: #FFF;
+}
+
+.panel-body {
+	
+}
+
+.panel-side {
+	float:left; 
+	display:block; 
+	padding:15px 25px 15px 15px; 
+	vertical-align:center;
+}
+
+.panel-side img {
+	width:100px;
+	height:100px;
+}
+
+/*
+	Cost sections	
+*/
+
+.panel-car {
+	background: #69A1FF;
+}
+
+.panel-gas {
+	background: #FFB549;
+}
+
+.panel-tires {
+	background: #B87AE8;
+}
+
+.panel-oil {
+	background: #89E84D;
+}
+
+.panel-brakes {
+	background: #F5556C;
+}
+
+.panel-trip {
+	background: #78A3FF;
+}
