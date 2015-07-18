@@ -1,0 +1,204 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Road Trip Calculator</title>
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="roadtrip.js"></script>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		
+		<h1>Road Trip Calculator</h1>
+		
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+		  	<h3 class="panel-title">Car</h3>
+		  </div>
+		  <div class="panel-body">
+			<div class="form-group">
+				<label for="exampleInputPassword1">Car depreciation per mile</label>
+				<div class="input-group">
+					<div class="input-group-addon">$</div>
+					<input type="number" class="form-control" id="car-deprec" placeholder="0.30" value="0.30">
+			    </div>
+			</div>
+		  </div>
+		</div>
+			
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Tires</h3>
+		  </div>
+		  <div class="panel-body">
+			
+			<div class="form-group">
+				<label for="exampleInputPassword1">Value of each tire</label>
+				<div class="input-group">
+					<div class="input-group-addon">$</div>
+					<input type="number" class="form-control" id="tire-value" placeholder="250.00" value="250.00">
+			    </div>
+			</div>
+			
+			<div class="form-group">
+				<label for="exampleInputPassword1">Tire warranty</label>
+				<div class="input-group">
+					<input type="number" class="form-control" id="tire-warranty" placeholder="50000" value="50000">
+					<div class="input-group-addon">miles</div>
+			    </div>
+			</div>
+		    
+		  </div>
+		</div>
+		
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Gas</h3>
+		  </div>
+		  <div class="panel-body">
+			
+			<div class="form-group">
+				<label for="exampleInputPassword1">Car gas mileage</label>
+				<div class="input-group">
+					<input type="number" class="form-control" id="gas-mileage" placeholder="30" value="30">
+					<div class="input-group-addon">miles per gallon</div>
+			    </div>
+			</div>
+			
+			<div class="form-group">
+				<label for="exampleInputPassword1">Price of gas</label>
+				<div class="input-group">
+					<div class="input-group-addon">$</div>
+					<input type="number" class="form-control" id="gas-price" placeholder="3.00" value="3.00">
+			    </div>
+			</div>
+		    
+		  </div>
+		</div>
+		
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Oil</h3>
+		  </div>
+		  <div class="panel-body">
+			
+			<div class="form-group">
+				<label for="exampleInputPassword1">Oil change frequency</label>
+				<div class="input-group">
+					<input type="number" class="form-control" id="oil-change" placeholder="5000" value="5000">
+					<div class="input-group-addon">miles</div>
+			    </div>
+			</div>
+			
+			<div class="form-group">
+				<label for="exampleInputPassword1">Price of an oil change</label>
+				<div class="input-group">
+					<div class="input-group-addon">$</div>
+					<input type="number" class="form-control" id="oil-price" placeholder="32.00" value="32.00">
+			    </div>
+			</div>
+		    
+		  </div>
+		</div>
+		
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Brakes</h3>
+		  </div>
+		  <div class="panel-body">
+			
+			<div class="form-group">
+				<label for="exampleInputPassword1">Brake lifespan</label>
+				<div class="input-group">
+					<input type="number" class="form-control" id="brake-change" placeholder="30000" value="30000">
+					<div class="input-group-addon">miles</div>
+			    </div>
+			</div>
+			
+			<div class="form-group">
+				<label for="exampleInputPassword1">Price for new brakes for one wheel</label>
+				<div class="input-group">
+					<div class="input-group-addon">$</div>
+					<input type="number" class="form-control" id="brake-price" placeholder="200.00" value="200.00">
+			    </div>
+			</div>
+		    
+		  </div>
+		</div>
+		
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Trip</h3>
+		  </div>
+		  <div class="panel-body">
+			
+			<div class="form-group">
+				<label for="exampleInputPassword1">Distance (one way)</label>
+				<div class="input-group">
+					<input type="number" class="form-control" id="distance" placeholder="215" value="215">
+					<div class="input-group-addon">miles</div>
+			    </div>
+			</div>
+			
+			<div class="form-group">
+				<label for="exampleInputPassword1">Tolls (one way)</label>
+				<div class="input-group">
+					<div class="input-group-addon">$</div>
+					<input type="number" class="form-control" id="tolls" placeholder="5.54" value="5.54">
+			    </div>
+			</div>
+			
+			<div class="form-group">
+				<label for="exampleInputPassword1">Parking</label>
+				<div class="input-group">
+					<div class="input-group-addon">$</div>
+					<input type="number" class="form-control" id="parking" placeholder="0.00" value="0.00">
+			    </div>
+			</div>
+		    
+		  </div>
+		</div>
+		
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Result</h3>
+		  </div>
+		  <div class="panel-body">
+			
+			<center>
+				<code id="breakdown"></code>
+				<h3 class="center-block text-muted" id="result">click calculate</h3>
+			</center>
+		    
+		  </div>
+		  <div class="panel-footer">
+			<button class="btn btn-primary" id="calculate-button">Calculate</button>
+		  </div>
+		</div>
+		
+	</div>
+	
+	<center style="margin-bottom:10px; font-size:9px">
+		Road Trip Calculator | <a href="http://tlextrait.com" target="_blank">tlextrait.com</a> | <a href="http://jackru.it" target="_blank">jackfru.it</a><br/>
+		&copy; Copyright 2015, Thomas Lextrait, All Rights Reserved
+	</center>
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-44340660-1', 'tlextrait.com');
+	  ga('send', 'pageview');
+	</script>
+</body>
+</html>
