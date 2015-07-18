@@ -12,4 +12,4 @@ This is a simple tool that allows you to calculate the true cost of a road trip.
 This little tool also fetches the national average price prices.
 
 # Demo
-See this live here: [tlextrait.com/projects/roadtrip](http://tlextrait.com/projects/roadtrip)
+See it live here: [tlextrait.com/projects/roadtrip](http://tlextrait.com/projects/roadtrip)
